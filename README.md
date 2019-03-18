@@ -20,8 +20,10 @@ Enable Benchmarking in sequelize options
 ```js
 const log = new Log(req, res);
 
- const user = await User
-      .create({ name: 'Naredra Modi' }, { logging: log.logging() });
-      ```
+const user = await User
+  .create({ name: 'Naredra Modi' }, { logging: log.logging() });
+```
       
-      
+You can see number of queries executed and response time in header
+
+![sequelize query execution time logging](sequelize-query-execution-time.png)
